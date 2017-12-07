@@ -1,0 +1,15 @@
+1) Enable Python Libs
+   $ ./configure --enable-python-libs
+
+2) Check where the Libraries are going to be installed:
+   $ grep ^pythondir config.log
+
+3) Check that $pythondir appears in sys.path:
+   $ pythoin -c "import sys; print sys.path"
+
+   TRY:
+   $ export PYTHONPATH=$PYTHONPATH:/path/to/your/pythondir
+
+
+   --If this doesnt work, add the following to your shell.rc file
+   export PYTHONPATH=$PYTHONPATH:/path/to/your/pythondir

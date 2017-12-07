@@ -1,0 +1,7 @@
+1) Install:
+   sudo apt-get install python3-gpiozero
+
+2) Write a script that will controll the LED
+   This script could literally only turn the LED
+   on or off
+   
