@@ -4,7 +4,7 @@ import socket
 clientS = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 dataSize = 2048
 
-HOST = '192.168.1.101' #Jorge's PI
+HOST = '192.168.1.101'
 PORT = 6454
 address = (HOST, PORT)
 
