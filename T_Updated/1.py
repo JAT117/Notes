@@ -50,7 +50,7 @@ def RGBColors():
     print data
     
 '''    
-def JorgeDMX():
+def DMX():
     
     #OLA Implementation
     global data
@@ -84,7 +84,7 @@ def JorgeDMX():
 
 
 if __name__ == '__main__':
-    JorgeDMX()
+    DMX()
     
     # Close socket
     UDPSock.close()
