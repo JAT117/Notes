@@ -2,7 +2,8 @@
 import socket
 import sys
 import time
-                                    #Create a UDP socket
+
+#Create a UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 #server_address is a 'Tuple' of 2 with values 'localhost' and 10000
