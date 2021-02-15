@@ -1,8 +1,4 @@
-'''
-This file was derived from: https://docs.python.org/2/library/socketserver.html
-'''
 import SocketServer
-
 
 class UDPHandler(SocketServer.BaseRequestHandler):
 
@@ -12,7 +8,6 @@ class UDPHandler(SocketServer.BaseRequestHandler):
         print "{} wrote:".format(self.client_address[0])
         print data
         socket.sendto(data.upper(), self.client_address) #socket.sendto() is "need" for UDP
-
         
 if __name__ == "__main__":
     
@@ -22,5 +17,3 @@ if __name__ == "__main__":
     
     server = SocketServer.UDPServer(address, UDPHandler)
     server.serve_forever()
-    
-        
