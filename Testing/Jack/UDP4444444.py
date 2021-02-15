@@ -1,8 +1,7 @@
 #Client UDP
-import socket
-import sys
-import time
-                                    #Create a UDP socket
+import socket, sys, time
+
+#Create a UDP socket w/ SOCK_DGRAM
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 #server_address is a 'Tuple' of 2 with values 'localhost' and 10000
@@ -14,7 +13,6 @@ message = 'Hey server, What\'s up?'
 
 temp1 = ''
 while (temp1 != 'Bye, Client'):    
-    
 
     sock.sendto(message.encode(), server_address)
     time.sleep(1)
@@ -25,7 +23,6 @@ while (temp1 != 'Bye, Client'):
 
     time.sleep(2)
     sock.sendto('Adios, Server'.encode(), server_address)
-    
     
 print('Closing socket')
 time.sleep(1)
