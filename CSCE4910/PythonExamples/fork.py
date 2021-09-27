@@ -9,11 +9,12 @@ usage:
 time python fork.py
 
 '''
+#!/usr/bin/python3
+
 import os
 import time
 
 def main():
-
     #Fork 10 times
     for i in range(10):
         pid = os.fork()
@@ -24,5 +25,5 @@ def main():
             time.sleep(1)
             return
 
-if __name__ == '__main__':
+if __name__ == '__main__': #driver code
     main()
